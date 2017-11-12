@@ -56,7 +56,7 @@ void Car::SetColor(char* co)
 	strcpy_s(color, 10, co);
 }
 
-Car Car::CompareByYear(Car & c2)
+Car& Car::CompareByYear(Car & c2)
 {
 	if (year >= c2.year)
 	{
@@ -68,7 +68,7 @@ Car Car::CompareByYear(Car & c2)
 	}
 }
 
-Car Car::CompareByEngineVolume(Car & c2)
+Car& Car::CompareByEngineVolume(Car & c2)
 {
 	if (engineVolume >= c2.engineVolume)
 	{

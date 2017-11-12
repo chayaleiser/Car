@@ -18,6 +18,6 @@ public:
 	void SetColor(char*);
 	Car(string m, string mo, int y, int eV, char* co);
 	void Car::PrintCar();
-	Car CompareByYear(Car & c2);
-	Car CompareByEngineVolume(Car & c2);
+	Car& CompareByYear(Car & c2);
+	Car& CompareByEngineVolume(Car & c2);
 };
