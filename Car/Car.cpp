@@ -22,7 +22,7 @@ Car::Car(string m, string mo, int y, int eV, char* co)
 
 
 //operation <<
-void Car::PrintCar()
+void Car::PrintCar() const
 {
 	cout << "company: " << company << "\nmodel: " << model << "\nyear: " << year << "\nengine volume: " << engineVolume << "\ncolor: " << color << endl;
 }
@@ -56,7 +56,7 @@ void Car::SetColor(char* co)
 	strcpy_s(color, 10, co);
 }
 
-Car& Car::CompareByYear(Car & c2)
+const Car& Car::CompareByYear(const Car & c2) const
 {
 	if (year >= c2.year)
 	{
@@ -68,7 +68,7 @@ Car& Car::CompareByYear(Car & c2)
 	}
 }
 
-Car& Car::CompareByEngineVolume(Car & c2)
+const Car& Car::CompareByEngineVolume(const Car & c2) const
 {
 	if (engineVolume >= c2.engineVolume)
 	{

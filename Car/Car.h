@@ -17,7 +17,7 @@ public:
 	void SetEngineVolume(int);
 	void SetColor(char*);
 	Car(string m, string mo, int y, int eV, char* co);
-	void Car::PrintCar();
-	Car& CompareByYear(Car & c2);
-	Car& CompareByEngineVolume(Car & c2);
+	void Car::PrintCar() const;
+	const Car& CompareByYear(const Car  & c2) const;
+	const Car& CompareByEngineVolume(const Car & c2) const;
 };
